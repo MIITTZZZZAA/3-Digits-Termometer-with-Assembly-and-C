@@ -1,0 +1,633 @@
+
+C:\Users\mitza\AppData\Local\arduino\sketches\2B94E4F1BE5F5C8AA3454B4398B0F80D/termometru.ino.elf:     file format elf32-avr
+
+
+Disassembly of section .text:
+
+00000000 <__vectors>:
+__vectors():
+   0:	13 c0       	rjmp	.+38     	; 0x28 <__ctors_end>
+   2:	2c c0       	rjmp	.+88     	; 0x5c <__bad_interrupt>
+   4:	2b c0       	rjmp	.+86     	; 0x5c <__bad_interrupt>
+   6:	2a c0       	rjmp	.+84     	; 0x5c <__bad_interrupt>
+   8:	29 c0       	rjmp	.+82     	; 0x5c <__bad_interrupt>
+   a:	28 c0       	rjmp	.+80     	; 0x5c <__bad_interrupt>
+   c:	68 c0       	rjmp	.+208    	; 0xde <__vector_6>
+   e:	26 c0       	rjmp	.+76     	; 0x5c <__bad_interrupt>
+  10:	25 c0       	rjmp	.+74     	; 0x5c <__bad_interrupt>
+  12:	24 c0       	rjmp	.+72     	; 0x5c <__bad_interrupt>
+  14:	23 c0       	rjmp	.+70     	; 0x5c <__bad_interrupt>
+  16:	22 c0       	rjmp	.+68     	; 0x5c <__bad_interrupt>
+  18:	21 c0       	rjmp	.+66     	; 0x5c <__bad_interrupt>
+  1a:	20 c0       	rjmp	.+64     	; 0x5c <__bad_interrupt>
+  1c:	1f c0       	rjmp	.+62     	; 0x5c <__bad_interrupt>
+  1e:	1e c0       	rjmp	.+60     	; 0x5c <__bad_interrupt>
+  20:	1d c0       	rjmp	.+58     	; 0x5c <__bad_interrupt>
+  22:	1c c0       	rjmp	.+56     	; 0x5c <__bad_interrupt>
+  24:	1b c0       	rjmp	.+54     	; 0x5c <__bad_interrupt>
+
+00000026 <__ctors_start>:
+__trampolines_start():
+  26:	b9 00       	.word	0x00b9	; ????
+
+00000028 <__ctors_end>:
+__dtors_end():
+  28:	11 24       	eor	r1, r1
+  2a:	1f be       	out	0x3f, r1	; 63
+  2c:	cf e5       	ldi	r28, 0x5F	; 95
+  2e:	d2 e0       	ldi	r29, 0x02	; 2
+  30:	de bf       	out	0x3e, r29	; 62
+  32:	cd bf       	out	0x3d, r28	; 61
+
+00000034 <__do_clear_bss>:
+__do_clear_bss():
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr25/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:2441
+  34:	20 e0       	ldi	r18, 0x00	; 0
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr25/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:2442
+  36:	a0 e6       	ldi	r26, 0x60	; 96
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr25/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:2443
+  38:	b0 e0       	ldi	r27, 0x00	; 0
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr25/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:2444
+  3a:	01 c0       	rjmp	.+2      	; 0x3e <.do_clear_bss_start>
+
+0000003c <.do_clear_bss_loop>:
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr25/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:2446
+  3c:	1d 92       	st	X+, r1
+
+0000003e <.do_clear_bss_start>:
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr25/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:2448
+  3e:	a1 39       	cpi	r26, 0x91	; 145
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr25/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:2449
+  40:	b2 07       	cpc	r27, r18
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr25/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:2450
+  42:	e1 f7       	brne	.-8      	; 0x3c <.do_clear_bss_loop>
+
+00000044 <__do_global_ctors>:
+__do_global_ctors():
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr25/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:2466
+  44:	10 e0       	ldi	r17, 0x00	; 0
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr25/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:2467
+  46:	c4 e1       	ldi	r28, 0x14	; 20
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr25/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:2468
+  48:	d0 e0       	ldi	r29, 0x00	; 0
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr25/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:2472
+  4a:	03 c0       	rjmp	.+6      	; 0x52 <__do_global_ctors+0xe>
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr25/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:2474
+  4c:	21 97       	sbiw	r28, 0x01	; 1
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr25/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:2480
+  4e:	fe 01       	movw	r30, r28
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr25/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:2481
+  50:	d2 d0       	rcall	.+420    	; 0x1f6 <__tablejump2__>
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr25/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:2483
+  52:	c3 31       	cpi	r28, 0x13	; 19
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr25/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:2484
+  54:	d1 07       	cpc	r29, r17
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr25/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:2489
+  56:	d1 f7       	brne	.-12     	; 0x4c <__do_global_ctors+0x8>
+  58:	02 d0       	rcall	.+4      	; 0x5e <main>
+  5a:	d3 c0       	rjmp	.+422    	; 0x202 <_exit>
+
+0000005c <__bad_interrupt>:
+__vector_1():
+  5c:	d1 cf       	rjmp	.-94     	; 0x0 <__vectors>
+
+0000005e <main>:
+main():
+C:\Users\mitza\OneDrive\Documente\Arduino\termometru/display_253.S:10
+.equ PORTA, 0x1B
+.equ PORTB, 0x18
+
+main:
+    ; Segmente PA = output
+    ldi r16, 0xFF
+  5e:	0f ef       	ldi	r16, 0xFF	; 255
+C:\Users\mitza\OneDrive\Documente\Arduino\termometru/display_253.S:11
+    out DDRA, r16
+  60:	0a bb       	out	0x1a, r16	; 26
+C:\Users\mitza\OneDrive\Documente\Arduino\termometru/display_253.S:14
+
+    ; PB3–PB5 = output
+    ldi r16, 0b00111000
+  62:	08 e3       	ldi	r16, 0x38	; 56
+C:\Users\mitza\OneDrive\Documente\Arduino\termometru/display_253.S:15
+    out DDRB, r16
+  64:	07 bb       	out	0x17, r16	; 23
+
+00000066 <loop>:
+loop():
+C:\Users\mitza\OneDrive\Documente\Arduino\termometru/display_253.S:18
+
+loop:
+  lds r20, 0x0660    ; digits[0]
+  66:	40 91 60 06 	lds	r20, 0x0660	; 0x800660 <__bss_end+0x5cf>
+C:\Users\mitza\OneDrive\Documente\Arduino\termometru/display_253.S:19
+  rcall show_digit1
+  6a:	07 d0       	rcall	.+14     	; 0x7a <show_digit1>
+C:\Users\mitza\OneDrive\Documente\Arduino\termometru/display_253.S:21
+
+  lds r20, 0x0661    ; digits[1]
+  6c:	40 91 61 06 	lds	r20, 0x0661	; 0x800661 <__bss_end+0x5d0>
+C:\Users\mitza\OneDrive\Documente\Arduino\termometru/display_253.S:22
+  rcall show_digit2
+  70:	07 d0       	rcall	.+14     	; 0x80 <show_digit2>
+C:\Users\mitza\OneDrive\Documente\Arduino\termometru/display_253.S:24
+
+  lds r20, 0x0662    ; digits[2]
+  72:	40 91 62 06 	lds	r20, 0x0662	; 0x800662 <__bss_end+0x5d1>
+C:\Users\mitza\OneDrive\Documente\Arduino\termometru/display_253.S:25
+  rcall show_digit3
+  76:	07 d0       	rcall	.+14     	; 0x86 <show_digit3>
+C:\Users\mitza\OneDrive\Documente\Arduino\termometru/display_253.S:27
+
+    rjmp loop
+  78:	f6 cf       	rjmp	.-20     	; 0x66 <loop>
+
+0000007a <show_digit1>:
+show_digit1():
+C:\Users\mitza\OneDrive\Documente\Arduino\termometru/display_253.S:32
+
+; ----- Afișare cifre -----
+
+show_digit1:
+    rcall decode
+  7a:	0e d0       	rcall	.+28     	; 0x98 <decode>
+C:\Users\mitza\OneDrive\Documente\Arduino\termometru/display_253.S:33
+    ldi r17, 0b00001000
+  7c:	18 e0       	ldi	r17, 0x08	; 8
+C:\Users\mitza\OneDrive\Documente\Arduino\termometru/display_253.S:34
+    rjmp display
+  7e:	06 c0       	rjmp	.+12     	; 0x8c <display>
+
+00000080 <show_digit2>:
+show_digit2():
+C:\Users\mitza\OneDrive\Documente\Arduino\termometru/display_253.S:37
+
+show_digit2:
+    rcall decode
+  80:	0b d0       	rcall	.+22     	; 0x98 <decode>
+C:\Users\mitza\OneDrive\Documente\Arduino\termometru/display_253.S:38
+    ldi r17, 0b00010000
+  82:	10 e1       	ldi	r17, 0x10	; 16
+C:\Users\mitza\OneDrive\Documente\Arduino\termometru/display_253.S:39
+    rjmp display
+  84:	03 c0       	rjmp	.+6      	; 0x8c <display>
+
+00000086 <show_digit3>:
+show_digit3():
+C:\Users\mitza\OneDrive\Documente\Arduino\termometru/display_253.S:42
+
+show_digit3:
+    rcall decode
+  86:	08 d0       	rcall	.+16     	; 0x98 <decode>
+C:\Users\mitza\OneDrive\Documente\Arduino\termometru/display_253.S:43
+    ldi r17, 0b00100000
+  88:	10 e2       	ldi	r17, 0x20	; 32
+C:\Users\mitza\OneDrive\Documente\Arduino\termometru/display_253.S:44
+    rjmp display
+  8a:	00 c0       	rjmp	.+0      	; 0x8c <display>
+
+0000008c <display>:
+display():
+C:\Users\mitza\OneDrive\Documente\Arduino\termometru/display_253.S:47
+
+display:
+    out PORTA, r16
+  8c:	0b bb       	out	0x1b, r16	; 27
+C:\Users\mitza\OneDrive\Documente\Arduino\termometru/display_253.S:48
+    out PORTB, r17
+  8e:	18 bb       	out	0x18, r17	; 24
+C:\Users\mitza\OneDrive\Documente\Arduino\termometru/display_253.S:49
+    rcall short_delay
+  90:	21 d0       	rcall	.+66     	; 0xd4 <short_delay>
+C:\Users\mitza\OneDrive\Documente\Arduino\termometru/display_253.S:50
+    ldi r16, 0x00
+  92:	00 e0       	ldi	r16, 0x00	; 0
+C:\Users\mitza\OneDrive\Documente\Arduino\termometru/display_253.S:51
+    out PORTB, r16
+  94:	08 bb       	out	0x18, r16	; 24
+C:\Users\mitza\OneDrive\Documente\Arduino\termometru/display_253.S:52
+    ret
+  96:	08 95       	ret
+
+00000098 <decode>:
+decode():
+C:\Users\mitza\OneDrive\Documente\Arduino\termometru/display_253.S:57
+
+; ----- Coduri pentru 0–9 -----
+
+decode:
+    cpi r20, 0
+  98:	40 30       	cpi	r20, 0x00	; 0
+C:\Users\mitza\OneDrive\Documente\Arduino\termometru/display_253.S:58
+    ldi r16, 0x03
+  9a:	03 e0       	ldi	r16, 0x03	; 3
+C:\Users\mitza\OneDrive\Documente\Arduino\termometru/display_253.S:59
+    breq ret
+  9c:	d1 f0       	breq	.+52     	; 0xd2 <ret>
+C:\Users\mitza\OneDrive\Documente\Arduino\termometru/display_253.S:60
+    cpi r20, 1
+  9e:	41 30       	cpi	r20, 0x01	; 1
+C:\Users\mitza\OneDrive\Documente\Arduino\termometru/display_253.S:61
+    ldi r16, 0x9F
+  a0:	0f e9       	ldi	r16, 0x9F	; 159
+C:\Users\mitza\OneDrive\Documente\Arduino\termometru/display_253.S:62
+    breq ret
+  a2:	b9 f0       	breq	.+46     	; 0xd2 <ret>
+C:\Users\mitza\OneDrive\Documente\Arduino\termometru/display_253.S:63
+    cpi r20, 2
+  a4:	42 30       	cpi	r20, 0x02	; 2
+C:\Users\mitza\OneDrive\Documente\Arduino\termometru/display_253.S:64
+    ldi r16, 0x25
+  a6:	05 e2       	ldi	r16, 0x25	; 37
+C:\Users\mitza\OneDrive\Documente\Arduino\termometru/display_253.S:65
+    breq ret
+  a8:	a1 f0       	breq	.+40     	; 0xd2 <ret>
+C:\Users\mitza\OneDrive\Documente\Arduino\termometru/display_253.S:66
+    cpi r20, 3
+  aa:	43 30       	cpi	r20, 0x03	; 3
+C:\Users\mitza\OneDrive\Documente\Arduino\termometru/display_253.S:67
+    ldi r16, 0x0D
+  ac:	0d e0       	ldi	r16, 0x0D	; 13
+C:\Users\mitza\OneDrive\Documente\Arduino\termometru/display_253.S:68
+    breq ret
+  ae:	89 f0       	breq	.+34     	; 0xd2 <ret>
+C:\Users\mitza\OneDrive\Documente\Arduino\termometru/display_253.S:69
+    cpi r20, 4
+  b0:	44 30       	cpi	r20, 0x04	; 4
+C:\Users\mitza\OneDrive\Documente\Arduino\termometru/display_253.S:70
+    ldi r16, 0x99
+  b2:	09 e9       	ldi	r16, 0x99	; 153
+C:\Users\mitza\OneDrive\Documente\Arduino\termometru/display_253.S:71
+    breq ret
+  b4:	71 f0       	breq	.+28     	; 0xd2 <ret>
+C:\Users\mitza\OneDrive\Documente\Arduino\termometru/display_253.S:72
+    cpi r20, 5
+  b6:	45 30       	cpi	r20, 0x05	; 5
+C:\Users\mitza\OneDrive\Documente\Arduino\termometru/display_253.S:73
+    ldi r16, 0x49
+  b8:	09 e4       	ldi	r16, 0x49	; 73
+C:\Users\mitza\OneDrive\Documente\Arduino\termometru/display_253.S:74
+    breq ret
+  ba:	59 f0       	breq	.+22     	; 0xd2 <ret>
+C:\Users\mitza\OneDrive\Documente\Arduino\termometru/display_253.S:75
+    cpi r20, 6
+  bc:	46 30       	cpi	r20, 0x06	; 6
+C:\Users\mitza\OneDrive\Documente\Arduino\termometru/display_253.S:76
+    ldi r16, 0x41
+  be:	01 e4       	ldi	r16, 0x41	; 65
+C:\Users\mitza\OneDrive\Documente\Arduino\termometru/display_253.S:77
+    breq ret
+  c0:	41 f0       	breq	.+16     	; 0xd2 <ret>
+C:\Users\mitza\OneDrive\Documente\Arduino\termometru/display_253.S:78
+    cpi r20, 7
+  c2:	47 30       	cpi	r20, 0x07	; 7
+C:\Users\mitza\OneDrive\Documente\Arduino\termometru/display_253.S:79
+    ldi r16, 0x1B
+  c4:	0b e1       	ldi	r16, 0x1B	; 27
+C:\Users\mitza\OneDrive\Documente\Arduino\termometru/display_253.S:80
+    breq ret
+  c6:	29 f0       	breq	.+10     	; 0xd2 <ret>
+C:\Users\mitza\OneDrive\Documente\Arduino\termometru/display_253.S:81
+    cpi r20, 8
+  c8:	48 30       	cpi	r20, 0x08	; 8
+C:\Users\mitza\OneDrive\Documente\Arduino\termometru/display_253.S:82
+    ldi r16, 0x01
+  ca:	01 e0       	ldi	r16, 0x01	; 1
+C:\Users\mitza\OneDrive\Documente\Arduino\termometru/display_253.S:83
+    breq ret
+  cc:	11 f0       	breq	.+4      	; 0xd2 <ret>
+C:\Users\mitza\OneDrive\Documente\Arduino\termometru/display_253.S:84
+    cpi r20, 9
+  ce:	49 30       	cpi	r20, 0x09	; 9
+C:\Users\mitza\OneDrive\Documente\Arduino\termometru/display_253.S:85
+    ldi r16, 0x09
+  d0:	09 e0       	ldi	r16, 0x09	; 9
+
+000000d2 <ret>:
+ret():
+C:\Users\mitza\OneDrive\Documente\Arduino\termometru/display_253.S:87
+ret:
+    ret
+  d2:	08 95       	ret
+
+000000d4 <short_delay>:
+short_delay():
+C:\Users\mitza\OneDrive\Documente\Arduino\termometru/display_253.S:90
+
+short_delay:
+    ldi r18, 100
+  d4:	24 e6       	ldi	r18, 0x64	; 100
+
+000000d6 <d1>:
+d1():
+C:\Users\mitza\OneDrive\Documente\Arduino\termometru/display_253.S:92
+d1:
+    nop
+  d6:	00 00       	nop
+C:\Users\mitza\OneDrive\Documente\Arduino\termometru/display_253.S:93
+    dec r18
+  d8:	2a 95       	dec	r18
+C:\Users\mitza\OneDrive\Documente\Arduino\termometru/display_253.S:94
+    brne d1
+  da:	e9 f7       	brne	.-6      	; 0xd6 <d1>
+C:\Users\mitza\OneDrive\Documente\Arduino\termometru/display_253.S:95
+    ret
+  dc:	08 95       	ret
+
+000000de <__vector_6>:
+__vector_6():
+C:\Users\mitza\AppData\Local\Arduino15\packages\ATTinyCore\hardware\avr\1.5.2\cores\tiny/wiring.c:308
+      #error "cannot find Millis() timer overflow vector"
+    #endif
+  #else
+    #error "Millis() timer not defined!"
+  #endif
+  {
+  de:	1f 92       	push	r1
+  e0:	0f 92       	push	r0
+  e2:	0f b6       	in	r0, 0x3f	; 63
+  e4:	0f 92       	push	r0
+  e6:	11 24       	eor	r1, r1
+  e8:	2f 93       	push	r18
+  ea:	3f 93       	push	r19
+  ec:	8f 93       	push	r24
+  ee:	9f 93       	push	r25
+  f0:	af 93       	push	r26
+  f2:	bf 93       	push	r27
+C:\Users\mitza\AppData\Local\Arduino15\packages\ATTinyCore\hardware\avr\1.5.2\cores\tiny/wiring.c:311
+    // copy these to local variables so they can be stored in registers
+    // (volatile variables must be read from memory on every access)
+    unsigned long m = millis_timer_millis;
+  f4:	80 91 8d 00 	lds	r24, 0x008D	; 0x80008d <millis_timer_millis>
+  f8:	90 91 8e 00 	lds	r25, 0x008E	; 0x80008e <millis_timer_millis+0x1>
+  fc:	a0 91 8f 00 	lds	r26, 0x008F	; 0x80008f <millis_timer_millis+0x2>
+ 100:	b0 91 90 00 	lds	r27, 0x0090	; 0x800090 <millis_timer_millis+0x3>
+C:\Users\mitza\AppData\Local\Arduino15\packages\ATTinyCore\hardware\avr\1.5.2\cores\tiny/wiring.c:312
+    unsigned char f = millis_timer_fract;
+ 104:	30 91 8c 00 	lds	r19, 0x008C	; 0x80008c <millis_timer_fract>
+C:\Users\mitza\AppData\Local\Arduino15\packages\ATTinyCore\hardware\avr\1.5.2\cores\tiny/wiring.c:319
+    static unsigned char correct_exact = 0;     // rollover intended
+    if (++correct_exact < CORRECT_EXACT_MANY) {
+      ++f;
+    }
+#endif
+    f += FRACT_INC;
+ 108:	26 e0       	ldi	r18, 0x06	; 6
+ 10a:	23 0f       	add	r18, r19
+C:\Users\mitza\AppData\Local\Arduino15\packages\ATTinyCore\hardware\avr\1.5.2\cores\tiny/wiring.c:321
+
+    if (f >= FRACT_MAX)
+ 10c:	2d 37       	cpi	r18, 0x7D	; 125
+ 10e:	68 f1       	brcs	.+90     	; 0x16a <__vector_6+0x8c>
+C:\Users\mitza\AppData\Local\Arduino15\packages\ATTinyCore\hardware\avr\1.5.2\cores\tiny/wiring.c:323
+    {
+      f -= FRACT_MAX;
+ 110:	29 e8       	ldi	r18, 0x89	; 137
+ 112:	23 0f       	add	r18, r19
+C:\Users\mitza\AppData\Local\Arduino15\packages\ATTinyCore\hardware\avr\1.5.2\cores\tiny/wiring.c:324
+      m += MILLIS_INC + 1;
+ 114:	03 96       	adiw	r24, 0x03	; 3
+ 116:	a1 1d       	adc	r26, r1
+ 118:	b1 1d       	adc	r27, r1
+C:\Users\mitza\AppData\Local\Arduino15\packages\ATTinyCore\hardware\avr\1.5.2\cores\tiny/wiring.c:331
+    else
+    {
+      m += MILLIS_INC;
+    }
+
+    millis_timer_fract = f;
+ 11a:	20 93 8c 00 	sts	0x008C, r18	; 0x80008c <millis_timer_fract>
+C:\Users\mitza\AppData\Local\Arduino15\packages\ATTinyCore\hardware\avr\1.5.2\cores\tiny/wiring.c:332
+    millis_timer_millis = m;
+ 11e:	80 93 8d 00 	sts	0x008D, r24	; 0x80008d <millis_timer_millis>
+ 122:	90 93 8e 00 	sts	0x008E, r25	; 0x80008e <millis_timer_millis+0x1>
+ 126:	a0 93 8f 00 	sts	0x008F, r26	; 0x80008f <millis_timer_millis+0x2>
+ 12a:	b0 93 90 00 	sts	0x0090, r27	; 0x800090 <millis_timer_millis+0x3>
+C:\Users\mitza\AppData\Local\Arduino15\packages\ATTinyCore\hardware\avr\1.5.2\cores\tiny/wiring.c:334
+#ifndef CORRECT_EXACT_MICROS
+    millis_timer_overflow_count++;
+ 12e:	80 91 88 00 	lds	r24, 0x0088	; 0x800088 <millis_timer_overflow_count>
+ 132:	90 91 89 00 	lds	r25, 0x0089	; 0x800089 <millis_timer_overflow_count+0x1>
+ 136:	a0 91 8a 00 	lds	r26, 0x008A	; 0x80008a <millis_timer_overflow_count+0x2>
+ 13a:	b0 91 8b 00 	lds	r27, 0x008B	; 0x80008b <millis_timer_overflow_count+0x3>
+ 13e:	01 96       	adiw	r24, 0x01	; 1
+ 140:	a1 1d       	adc	r26, r1
+ 142:	b1 1d       	adc	r27, r1
+ 144:	80 93 88 00 	sts	0x0088, r24	; 0x800088 <millis_timer_overflow_count>
+ 148:	90 93 89 00 	sts	0x0089, r25	; 0x800089 <millis_timer_overflow_count+0x1>
+ 14c:	a0 93 8a 00 	sts	0x008A, r26	; 0x80008a <millis_timer_overflow_count+0x2>
+ 150:	b0 93 8b 00 	sts	0x008B, r27	; 0x80008b <millis_timer_overflow_count+0x3>
+C:\Users\mitza\AppData\Local\Arduino15\packages\ATTinyCore\hardware\avr\1.5.2\cores\tiny/wiring.c:336
+#endif
+  }
+ 154:	bf 91       	pop	r27
+ 156:	af 91       	pop	r26
+ 158:	9f 91       	pop	r25
+ 15a:	8f 91       	pop	r24
+ 15c:	3f 91       	pop	r19
+ 15e:	2f 91       	pop	r18
+ 160:	0f 90       	pop	r0
+ 162:	0f be       	out	0x3f, r0	; 63
+ 164:	0f 90       	pop	r0
+ 166:	1f 90       	pop	r1
+ 168:	18 95       	reti
+C:\Users\mitza\AppData\Local\Arduino15\packages\ATTinyCore\hardware\avr\1.5.2\cores\tiny/wiring.c:328
+      f -= FRACT_MAX;
+      m += MILLIS_INC + 1;
+    }
+    else
+    {
+      m += MILLIS_INC;
+ 16a:	02 96       	adiw	r24, 0x02	; 2
+ 16c:	a1 1d       	adc	r26, r1
+ 16e:	b1 1d       	adc	r27, r1
+ 170:	d4 cf       	rjmp	.-88     	; 0x11a <__vector_6+0x3c>
+
+00000172 <_GLOBAL__sub_I_digits>:
+pinMode():
+C:\Users\mitza\AppData\Local\Arduino15\packages\ATTinyCore\hardware\avr\1.5.2\cores\tiny/wiring_digital.c:45
+
+  reg = portModeRegister(port);
+  out = portOutputRegister(port);
+
+  if (mode == INPUT) {
+    uint8_t oldSREG = SREG;
+ 172:	8f b7       	in	r24, 0x3f	; 63
+C:\Users\mitza\AppData\Local\Arduino15\packages\ATTinyCore\hardware\avr\1.5.2\cores\tiny/wiring_digital.c:46
+                cli();
+ 174:	f8 94       	cli
+C:\Users\mitza\AppData\Local\Arduino15\packages\ATTinyCore\hardware\avr\1.5.2\cores\tiny/wiring_digital.c:47
+    *reg &= ~bit;
+ 176:	be 98       	cbi	0x17, 6	; 23
+C:\Users\mitza\AppData\Local\Arduino15\packages\ATTinyCore\hardware\avr\1.5.2\cores\tiny/wiring_digital.c:48
+    *out &= ~bit;
+ 178:	c6 98       	cbi	0x18, 6	; 24
+C:\Users\mitza\AppData\Local\Arduino15\packages\ATTinyCore\hardware\avr\1.5.2\cores\tiny/wiring_digital.c:49
+    SREG = oldSREG;
+ 17a:	8f bf       	out	0x3f, r24	; 63
+begin():
+c:\Users\mitza\OneDrive\Documente\Arduino\libraries\OneWire/OneWire.cpp:165
+
+
+void OneWire::begin(uint8_t pin)
+{
+	pinMode(pin, INPUT);
+	bitmask = PIN_TO_BITMASK(pin);
+ 17c:	ea e7       	ldi	r30, 0x7A	; 122
+ 17e:	f0 e0       	ldi	r31, 0x00	; 0
+ 180:	80 e4       	ldi	r24, 0x40	; 64
+ 182:	80 83       	st	Z, r24
+c:\Users\mitza\OneDrive\Documente\Arduino\libraries\OneWire/OneWire.cpp:166
+	baseReg = PIN_TO_BASEREG(pin);
+ 184:	86 e3       	ldi	r24, 0x36	; 54
+ 186:	90 e0       	ldi	r25, 0x00	; 0
+ 188:	92 83       	std	Z+2, r25	; 0x02
+ 18a:	81 83       	std	Z+1, r24	; 0x01
+reset_search():
+c:\Users\mitza\OneDrive\Documente\Arduino\libraries\OneWire/OneWire.cpp:345
+// You do not need to do it for the first search, though you could.
+//
+void OneWire::reset_search()
+{
+  // reset the search state
+  LastDiscrepancy = 0;
+ 18c:	13 86       	std	Z+11, r1	; 0x0b
+c:\Users\mitza\OneDrive\Documente\Arduino\libraries\OneWire/OneWire.cpp:346
+  LastDeviceFlag = false;
+ 18e:	15 86       	std	Z+13, r1	; 0x0d
+c:\Users\mitza\OneDrive\Documente\Arduino\libraries\OneWire/OneWire.cpp:347
+  LastFamilyDiscrepancy = 0;
+ 190:	14 86       	std	Z+12, r1	; 0x0c
+c:\Users\mitza\OneDrive\Documente\Arduino\libraries\OneWire/OneWire.cpp:349
+  for(int i = 7; ; i--) {
+    ROM_NO[i] = 0;
+ 192:	12 86       	std	Z+10, r1	; 0x0a
+ 194:	11 86       	std	Z+9, r1	; 0x09
+ 196:	10 86       	std	Z+8, r1	; 0x08
+ 198:	17 82       	std	Z+7, r1	; 0x07
+ 19a:	16 82       	std	Z+6, r1	; 0x06
+ 19c:	15 82       	std	Z+5, r1	; 0x05
+ 19e:	14 82       	std	Z+4, r1	; 0x04
+ 1a0:	13 82       	std	Z+3, r1	; 0x03
+__base_ctor ():
+c:\Users\mitza\OneDrive\Documente\Arduino\libraries\DallasTemperature/DallasTemperature.cpp:45
+#define DSROM_FAMILY    0
+#define DSROM_CRC       7
+
+DallasTemperature::DallasTemperature() {
+    _wire = nullptr;
+    devices = 0;
+ 1a2:	a3 e6       	ldi	r26, 0x63	; 99
+ 1a4:	b0 e0       	ldi	r27, 0x00	; 0
+ 1a6:	17 96       	adiw	r26, 0x07	; 7
+ 1a8:	1c 92       	st	X, r1
+ 1aa:	17 97       	sbiw	r26, 0x07	; 7
+c:\Users\mitza\OneDrive\Documente\Arduino\libraries\DallasTemperature/DallasTemperature.cpp:46
+    ds18Count = 0;
+ 1ac:	18 96       	adiw	r26, 0x08	; 8
+ 1ae:	1c 92       	st	X, r1
+ 1b0:	18 97       	sbiw	r26, 0x08	; 8
+c:\Users\mitza\OneDrive\Documente\Arduino\libraries\DallasTemperature/DallasTemperature.cpp:47
+    parasite = false;
+ 1b2:	1c 92       	st	X, r1
+c:\Users\mitza\OneDrive\Documente\Arduino\libraries\DallasTemperature/DallasTemperature.cpp:48
+    bitResolution = 9;
+ 1b4:	89 e0       	ldi	r24, 0x09	; 9
+ 1b6:	13 96       	adiw	r26, 0x03	; 3
+ 1b8:	8c 93       	st	X, r24
+ 1ba:	13 97       	sbiw	r26, 0x03	; 3
+c:\Users\mitza\OneDrive\Documente\Arduino\libraries\DallasTemperature/DallasTemperature.cpp:49
+    waitForConversion = true;
+ 1bc:	81 e0       	ldi	r24, 0x01	; 1
+ 1be:	14 96       	adiw	r26, 0x04	; 4
+ 1c0:	8c 93       	st	X, r24
+ 1c2:	14 97       	sbiw	r26, 0x04	; 4
+c:\Users\mitza\OneDrive\Documente\Arduino\libraries\DallasTemperature/DallasTemperature.cpp:50
+    checkForConversion = true;
+ 1c4:	15 96       	adiw	r26, 0x05	; 5
+ 1c6:	8c 93       	st	X, r24
+ 1c8:	15 97       	sbiw	r26, 0x05	; 5
+c:\Users\mitza\OneDrive\Documente\Arduino\libraries\DallasTemperature/DallasTemperature.cpp:51
+    autoSaveScratchPad = true;
+ 1ca:	16 96       	adiw	r26, 0x06	; 6
+ 1cc:	8c 93       	st	X, r24
+ 1ce:	16 97       	sbiw	r26, 0x06	; 6
+c:\Users\mitza\OneDrive\Documente\Arduino\libraries\DallasTemperature/DallasTemperature.cpp:52
+    useExternalPullup = false;
+ 1d0:	11 96       	adiw	r26, 0x01	; 1
+ 1d2:	1c 92       	st	X, r1
+ 1d4:	11 97       	sbiw	r26, 0x01	; 1
+setAlarmHandler():
+c:\Users\mitza\OneDrive\Documente\Arduino\libraries\DallasTemperature/DallasTemperature.cpp:598
+}
+
+#if REQUIRESALARMS
+
+void DallasTemperature::setAlarmHandler(const AlarmHandler* handler) {
+    _AlarmHandler = handler;
+ 1d6:	56 96       	adiw	r26, 0x16	; 22
+ 1d8:	1c 92       	st	X, r1
+ 1da:	1e 92       	st	-X, r1
+ 1dc:	55 97       	sbiw	r26, 0x15	; 21
+__base_ctor ():
+c:\Users\mitza\OneDrive\Documente\Arduino\libraries\DallasTemperature/DallasTemperature.cpp:55
+    checkForConversion = true;
+    autoSaveScratchPad = true;
+    useExternalPullup = false;
+#if REQUIRESALARMS
+    setAlarmHandler(NO_ALARM_HANDLER);
+    alarmSearchJunction = -1;
+ 1de:	8f ef       	ldi	r24, 0xFF	; 255
+ 1e0:	53 96       	adiw	r26, 0x13	; 19
+ 1e2:	8c 93       	st	X, r24
+ 1e4:	53 97       	sbiw	r26, 0x13	; 19
+c:\Users\mitza\OneDrive\Documente\Arduino\libraries\DallasTemperature/DallasTemperature.cpp:56
+    alarmSearchExhausted = 0;
+ 1e6:	54 96       	adiw	r26, 0x14	; 20
+ 1e8:	1c 92       	st	X, r1
+ 1ea:	54 97       	sbiw	r26, 0x14	; 20
+setOneWire():
+c:\Users\mitza\OneDrive\Documente\Arduino\libraries\DallasTemperature/DallasTemperature.cpp:69
+DallasTemperature::DallasTemperature(OneWire* _oneWire, uint8_t _pullupPin) : DallasTemperature(_oneWire) {
+    setPullupPin(_pullupPin);
+}
+
+void DallasTemperature::setOneWire(OneWire* _oneWire) {
+    _wire = _oneWire;
+ 1ec:	1a 96       	adiw	r26, 0x0a	; 10
+ 1ee:	fc 93       	st	X, r31
+ 1f0:	ee 93       	st	-X, r30
+ 1f2:	19 97       	sbiw	r26, 0x09	; 9
+_GLOBAL__sub_I_digits():
+C:\Users\mitza\OneDrive\Documente\Arduino\termometru/termometru.ino:25
+  int temp = int(t * 10);
+  digits[0] = (temp / 100) % 10;
+  digits[1] = (temp / 10) % 10;
+  digits[2] = temp % 10;
+  delay(300);
+ 1f4:	08 95       	ret
+
+000001f6 <__tablejump2__>:
+__tablejump2__():
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr25/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:2296
+ 1f6:	ee 0f       	add	r30, r30
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr25/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:2297
+ 1f8:	ff 1f       	adc	r31, r31
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr25/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:2328
+ 1fa:	05 90       	lpm	r0, Z+
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr25/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:2329
+ 1fc:	f4 91       	lpm	r31, Z
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr25/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:2330
+ 1fe:	e0 2d       	mov	r30, r0
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr25/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:2331
+ 200:	09 94       	ijmp
+
+00000202 <_exit>:
+exit():
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr25/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:2278
+ 202:	f8 94       	cli
+
+00000204 <__stop_program>:
+__stop_program():
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr25/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:2280
+ 204:	ff cf       	rjmp	.-2      	; 0x204 <__stop_program>
